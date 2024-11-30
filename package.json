@@ -1,17 +1,36 @@
 {
-  "name": "qr-code",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@david-koontz/qr-code",
+  "description": "Web component to display given content as a QR code, leveraging the qrcode package",
+  "version": "1.0.0",
+  "author": {
+    "name": "David Koontz",
+    "email": "david@koontz.dev"
+  },
+  "main": "dist/qr-code.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "vite": "^6.0.1"
   },
   "dependencies": {
     "qrcode": "^1.5.4"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/david-koontz/qr-code.git"
+  },
+  "keywords": [
+    "web component",
+    "custom element",
+    "qr code"
+  ]
 }

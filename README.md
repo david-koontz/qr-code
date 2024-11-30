@@ -4,6 +4,8 @@ Web component to display given content as a QR code, leveraging the [`qrcode`](h
 
 ## Examples
 
+[Demo site](https://david-koontz.github.io/qr-code/) with a few examples.
+
 The `content` attribute is the only required attribute in order to render the QR code:
 
 ```html
@@ -39,3 +41,23 @@ Many attributes are just exposing controls over the underlying options for [`qrc
 | `margin` | Number | 4 | How much wide the "quiet zone" rendered around the QR code should be. |
 | `scale` | Number | 4 | Scale factor. A value of "1" means "1px per module". |
 | `width` | Number | | Forces a specific width for the output image.<br/> If `width` is too small to contain the QR code, this option will be ignored.<br/> Takes precedence over `scale`. |
+
+## Usage
+
+**Option 1**: Install from npm
+
+```sh
+npm install @david-koontz/qr-code
+```
+
+From there you can either move/automate the included `dist/qr-code.js` file to where you need and can access it, or import it into your application directly:
+
+```js
+import('@david-koontz/qr-code');
+```
+
+---
+
+**Option 2**: The prebuilt `qr-code.js` file is included for ease of use as well.
+
+Download from https://github.com/david-koontz/qr-code/tree/main/qr-code.js and enjoy.

@@ -45,8 +45,8 @@ class QrCode extends HTMLElement {
                 const logoSize = 0.245;
 
                 const logo = new Image();
-                logo.src = this.attributes['logo']?.value;
                 logo.crossOrigin = 'anonymous';
+                logo.src = this.attributes['logo']?.value;
                 logo.onload = () => {
                     const logoWidth = this.canvas.width * logoSize;
                     const logoPos = (this.canvas.width * (1 - logoSize)) / 2;

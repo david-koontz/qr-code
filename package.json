@@ -1,7 +1,7 @@
 {
   "name": "@david-koontz/qr-code",
   "description": "Web component to display given content as a QR code, leveraging the qrcode package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "David Koontz",
     "email": "david@koontz.dev"
@@ -12,7 +12,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm install && npm run build"
   },
   "publishConfig": {
     "access": "public"

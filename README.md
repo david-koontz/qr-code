@@ -22,7 +22,7 @@ However there are many other supplemental options to customize the QR code:
   background-color="#ebeaea"
   content="https://vite.dev/guide/"
   logo="https://vite.dev/logo.svg"
-  pixel-color="#0069c2"
+  pixel-color="#8400d9"
   scale="8"
 ></qr-code>
 ```

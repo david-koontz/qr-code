@@ -60,4 +60,4 @@ import('@david-koontz/qr-code');
 
 **Option 2**: The prebuilt `qr-code.js` file is included for ease of use as well.
 
-Download from https://github.com/david-koontz/qr-code/tree/main/qr-code.js and enjoy.
+Download from https://github.com/david-koontz/qr-code/tree/main/dist/qr-code.js and enjoy.

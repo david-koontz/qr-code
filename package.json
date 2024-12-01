@@ -12,12 +12,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepublishOnly": "npm install && npm run build"
+    "prepare": "npm run third-party-licenses",
+    "prepublishOnly": "npm install && npm run build",
+    "third-party-licenses": "generate-license-file --input package.json --output third-party-licenses.txt --overwrite"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
+    "generate-license-file": "^3.6.0",
     "vite": "^6.0.1"
   },
   "dependencies": {
